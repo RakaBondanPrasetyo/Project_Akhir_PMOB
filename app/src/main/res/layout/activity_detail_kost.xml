@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Foto Kost -->
+        <ImageView
+            android:id="@+id/imgKost"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- Nama kost -->
+        <TextView
+            android:id="@+id/tvNamaKostDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Kost"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvHargaKostDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 0 / bulan"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ruangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Ruangan 3.5 x 3 Meter"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• AC"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/gantungan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Gantungan Baju"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/bantal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Bantal"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/kasur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Kasur"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/meja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Meja"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/kamar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Kamar Mandi Dalam"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cermin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Cermin"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Deskripsi -->
+        <TextView
+            android:id="@+id/tvDeskripsiKostDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi kost"
+            android:layout_marginTop="16dp" />
+
+        <!-- Pemilik -->
+        <TextView
+            android:id="@+id/tvPemilikKostDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pemilik: -"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvNoPemilikKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Hp pemilik: -"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Maps"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnPesanSekarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan Sekarang"
+            android:layout_marginTop="140dp" />
+    </LinearLayout>
+</ScrollView>

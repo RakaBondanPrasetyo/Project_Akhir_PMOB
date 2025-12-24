@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/terjauh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="28dp"
+            android:layout_width="400dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="50dp"
+            android:paddingStart="20dp"
+            android:paddingBottom="40dp"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="Silakkan cari kost"
+                android:textAlignment="center" />
+
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+            </SearchView>
+        </androidx.cardview.widget.CardView>
+
+        <android.widget.HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTerdekat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terdekat"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTerjauh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/orange">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terjauh"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Termurah"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Termahal"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terbaik"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </android.widget.HorizontalScrollView>
+
+        <android.widget.ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="685dp"
+            android:fillViewport="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKostTerdekat5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="14dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/namaKostTerdekat5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:text="Kost Aphrodite"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/kostTerdekat5"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kost5" />
+
+                        <TextView
+                            android:id="@+id/ratingTerdekat5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="⭐ 4.6"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_location" />
+
+                            <TextView
+                                android:id="@+id/jarakTerdekat5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginStart="4dp"
+                                android:hint="1922m"
+                                android:textSize="18dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Kamar kost ini mengusung desain minimalis dan modern yang sangat cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi oleh warna netral yang lembut, memberikan kesan yang bersih dan nyaman. Lantai keramik berwarna terang semakin mempertegas kesan luas pada ruangan, menciptakan suasana yang lapang dan nyaman."/>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Rp. 1.258.000 (Bulan Pertama)"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKostTerdekat4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="14dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/namaKostTerdekat4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:text="Kost Athena"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/kostTerdekat4"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kost4" />
+
+                        <TextView
+                            android:id="@+id/ratingTerdekat4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="⭐ 4.6"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_location" />
+
+                            <TextView
+                                android:id="@+id/jarakTerdekat4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginStart="4dp"
+                                android:hint="1713m"
+                                android:textSize="18dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Kamar kost ini mengusung desain minimalis dan modern yang sangat cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi oleh warna netral yang lembut, memberikan kesan yang bersih dan nyaman. Lantai keramik berwarna terang semakin mempertegas kesan luas pada ruangan, menciptakan suasana yang lapang dan nyaman."/>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Rp. 1.258.000 (Bulan Pertama)"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKostTerdekat3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="14dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/namaKostTerdekat3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:text="Kost Sirana"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/kostTerdekat3"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kost2" />
+
+                        <TextView
+                            android:id="@+id/ratingTerdekat3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="⭐ 4.6"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_location" />
+
+                            <TextView
+                                android:id="@+id/jarakTerdekat3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginStart="4dp"
+                                android:hint="1536m"
+                                android:textSize="18dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Kamar kost ini memiliki desain minimalis dan modern yang cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi warna netral dan lembut, memberikan kesan bersih dan nyaman. Lantai keramik berwarna terang menambah kesan luas pada ruangan"/>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Rp. 1.258.000 (Bulan Pertama)"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKostTerdekat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="14dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/namaKostTerdekat2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:text="Kost Arkana"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:textColor="#000" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/kostTerdekat2"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kost3" />
+
+                        <TextView
+                            android:id="@+id/ratingTerdekat2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="⭐ 4.8"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_location" />
+
+                            <TextView
+                                android:id="@+id/jarakTerdekat2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginStart="4dp"
+                                android:hint="978m"
+                                android:textSize="18dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Kamar kost ini mengusung konsep modern minimalis dengan desain yang elegan dan efisien. Kamar ini memiliki jendela besar yang memungkinkan cahaya alami masuk dengan baik, menciptakan suasana terang dan nyaman. Di bagian depan meja, tersedia televisi dinding yang menambahkan kenyamanan saat bersantai"/>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Rp. 1.384.000 (Bulan Pertama)"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKostTerdekat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="14dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/namaKostTerdekat"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:text="Kost Raya"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageTerdekat1"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kost1" />
+
+                        <TextView
+                            android:id="@+id/ratingTerdekat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="⭐ 4.8"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_location" />
+
+                            <TextView
+                                android:id="@+id/jarakTerdekat1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginStart="4dp"
+                                android:hint="578m"
+                                android:textSize="18dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Kamar kost ini memiliki desain minimalis dan modern yang cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi warna netral dan lembut, memberikan kesan bersih dan nyaman. Lantai keramik berwarna terang menambah kesan luas pada ruangan."/>
+
+                        <TextView
+                            android:id="@+id/tvDescTerdekat2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Rp. 1.650.000 (Bulan Pertama)"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </android.widget.ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBottom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/ic_home"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/home"
+                    android:layout_marginEnd="60dp"
+                    android:contentDescription="@string/home" />
+
+                <ImageView
+                    android:id="@+id/ic_booking"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_booking"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/booking" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
