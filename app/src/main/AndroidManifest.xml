@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectAkhir">
         <activity
+            android:name=".TermurahActivity"
+            android:exported="false" />
+        <activity
             android:name=".MapsActivity"
             android:exported="false" />
         <activity

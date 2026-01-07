@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
+import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.*
 
-class TerjauhActivity : AppCompatActivity() {
-
-    private lateinit var recyclerView: RecyclerView
+class TermurahActivity : AppCompatActivity() {
     private lateinit var etSearch: EditText
     private lateinit var prefs: SharedPreferences
     private lateinit var rvKost: RecyclerView
@@ -26,7 +26,7 @@ class TerjauhActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.terjauh_activity)
+        setContentView(R.layout.termurah_activity)
 
         prefs = getSharedPreferences(LoginActivity.PREFS_NAME, MODE_PRIVATE)
 
@@ -44,17 +44,17 @@ class TerjauhActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val cardTerjauh: CardView = findViewById(R.id.cardTerjauh)
+
+        cardTerjauh.setOnClickListener {
+            val intent = Intent(this, TerjauhActivity::class.java)
+            startActivity(intent)
+        }
+
         val cardTerdekat: CardView = findViewById(R.id.cardTerdekat)
 
         cardTerdekat.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        val cardTermurah: CardView = findViewById(R.id.cardTermurah)
-
-        cardTermurah.setOnClickListener {
-            val intent = Intent(this, TermurahActivity::class.java)
             startActivity(intent)
         }
 
@@ -87,6 +87,30 @@ class TerjauhActivity : AppCompatActivity() {
 
     private fun isiDataKost() {
         listKost.clear()
+
+        listKost.add(
+            Kost(
+                nama = "Kost Sirana",
+                fotoResId = R.drawable.kost3,
+                rating = "⭐ 4.7",
+                jarak = "955m",
+                desckripsi ="Kamar kost ini memiliki desain minimalis dan modern yang cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi warna netral dan lembut, memberikan kesan bersih dan nyaman. Lantai keramik berwarna terang menambah kesan luas pada ruangan.",
+                harga = "Rp. 1.250.000 (Bulan Pertama)",
+                namaPemilik = "Bu Kirana",
+                noHpPemilik = "085267871235",
+                detail1 = "• Ruangan 3.5 x 3 Meter",
+                detail2 = "• AC",
+                detail3 = "• Gantungan Baju",
+                detail4 = "• Bantal",
+                detail5 = "• Kasur",
+                detail6 = "• Meja",
+                detail7 = "• Kamar Mandi Dalam",
+                detail8 = "• Cermin",
+                lat = -7.795580,
+                lng = 110.369490
+
+            )
+        )
 
         listKost.add(
             Kost(
@@ -131,30 +155,6 @@ class TerjauhActivity : AppCompatActivity() {
                 detail8 = "• Cermin",
                 lat = -7.795580,
                 lng = 110.369490
-            )
-        )
-
-        listKost.add(
-            Kost(
-                nama = "Kost Sirana",
-                fotoResId = R.drawable.kost3,
-                rating = "⭐ 4.7",
-                jarak = "955m",
-                desckripsi ="Kamar kost ini memiliki desain minimalis dan modern yang cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi warna netral dan lembut, memberikan kesan bersih dan nyaman. Lantai keramik berwarna terang menambah kesan luas pada ruangan.",
-                harga = "Rp. 1.250.000 (Bulan Pertama)",
-                namaPemilik = "Bu Kirana",
-                noHpPemilik = "085267871235",
-                detail1 = "• Ruangan 3.5 x 3 Meter",
-                detail2 = "• AC",
-                detail3 = "• Gantungan Baju",
-                detail4 = "• Bantal",
-                detail5 = "• Kasur",
-                detail6 = "• Meja",
-                detail7 = "• Kamar Mandi Dalam",
-                detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
-
             )
         )
 

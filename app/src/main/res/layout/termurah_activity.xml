@@ -78,8 +78,7 @@
                     android:id="@+id/cardTerdekat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="12dp"
-                    app:cardBackgroundColor="@color/orange">
+                    app:cardCornerRadius="12dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -116,7 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/orange">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

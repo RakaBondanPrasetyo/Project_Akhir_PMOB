@@ -38,7 +38,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             startActivity(i)
             finish()
         }
-
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
