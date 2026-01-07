@@ -17,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectAkhir">
         <activity
+            android:name=".TerbaikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermahalActivity"
+            android:exported="false" />
+        <activity
             android:name=".TermurahActivity"
             android:exported="false" />
         <activity

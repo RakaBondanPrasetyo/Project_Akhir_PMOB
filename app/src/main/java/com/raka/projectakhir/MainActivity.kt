@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.SearchView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -57,6 +58,34 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TermurahActivity::class.java)
             startActivity(intent)
         }
+
+        val cardTermahal: CardView = findViewById(R.id.cardTermahal)
+
+        cardTermahal.setOnClickListener {
+            val intent = Intent(this, TermahalActivity::class.java)
+            startActivity(intent)
+        }
+
+        val cardTerbaik: CardView = findViewById(R.id.cardTerbaik)
+
+        cardTerbaik.setOnClickListener {
+            val intent = Intent(this, TermahalActivity::class.java)
+            startActivity(intent)
+        }
+
+//        val searchView: SearchView = findViewById(R.id.searchView)
+//        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+//            override fun onQueryTextSubmit(query: String?): Boolean {
+//                // Optional: Handle when query is submitted (e.g., hide keyboard)
+//                return false
+//            }
+//
+//            override fun onQueryTextChange(newText: String?): Boolean {
+//                // Panggil fungsi filter pada adapter
+//                adapter.filter(newText)
+//                return true
+//            }
+//        })
 
         isiDataKost()
 
@@ -129,8 +158,8 @@ class MainActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.782146,
+                lng = 110.364874
             )
         )
 
@@ -152,8 +181,8 @@ class MainActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.801329,
+                lng = 110.360446
 
             )
         )
@@ -176,8 +205,8 @@ class MainActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.784903,
+                lng = 110.357435
             )
         )
         listKost.add(
@@ -198,8 +227,8 @@ class MainActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.795043,
+                lng = 110.357028
             )
         )
     }

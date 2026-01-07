@@ -58,6 +58,20 @@ class TerjauhActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val cardTermahal: CardView = findViewById(R.id.cardTermahal)
+
+        cardTermahal.setOnClickListener {
+            val intent = Intent(this, TermahalActivity::class.java)
+            startActivity(intent)
+        }
+
+        val cardTerbaik: CardView = findViewById(R.id.cardTerbaik)
+
+        cardTerbaik.setOnClickListener {
+            val intent = Intent(this, TermahalActivity::class.java)
+            startActivity(intent)
+        }
+
         isiDataKost()
 
         adapter = KostAdapter(listKost) { kost ->
@@ -106,8 +120,8 @@ class TerjauhActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.795043,
+                lng = 110.357028
             )
         )
 
@@ -129,8 +143,8 @@ class TerjauhActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.784903,
+                lng = 110.357435
             )
         )
 
@@ -152,8 +166,8 @@ class TerjauhActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.801329,
+                lng = 110.360446
 
             )
         )
@@ -176,8 +190,8 @@ class TerjauhActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.782146,
+                lng = 110.364874
             )
         )
 

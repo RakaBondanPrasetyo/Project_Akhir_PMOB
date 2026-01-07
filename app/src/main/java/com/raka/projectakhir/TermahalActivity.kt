@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
 
-class TermurahActivity : AppCompatActivity() {
+class TermahalActivity : AppCompatActivity() {
     private lateinit var etSearch: EditText
     private lateinit var prefs: SharedPreferences
     private lateinit var rvKost: RecyclerView
@@ -26,7 +26,7 @@ class TermurahActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.termurah_activity)
+        setContentView(R.layout.termahal_activity)
 
         prefs = getSharedPreferences(LoginActivity.PREFS_NAME, MODE_PRIVATE)
 
@@ -58,10 +58,10 @@ class TermurahActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val cardTermahal: CardView = findViewById(R.id.cardTermahal)
+        val cardTermurah: CardView = findViewById(R.id.cardTermurah)
 
-        cardTermahal.setOnClickListener {
-            val intent = Intent(this, TermahalActivity::class.java)
+        cardTermurah.setOnClickListener {
+            val intent = Intent(this, TermurahActivity::class.java)
             startActivity(intent)
         }
 
@@ -104,14 +104,14 @@ class TermurahActivity : AppCompatActivity() {
 
         listKost.add(
             Kost(
-                nama = "Kost Sirana",
-                fotoResId = R.drawable.kost3,
-                rating = "⭐ 4.7",
-                jarak = "955m",
+                nama = "Kost Raya",
+                fotoResId = R.drawable.kost1,
+                rating = "⭐ 4.9",
+                jarak = "578m",
                 desckripsi ="Kamar kost ini memiliki desain minimalis dan modern yang cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi warna netral dan lembut, memberikan kesan bersih dan nyaman. Lantai keramik berwarna terang menambah kesan luas pada ruangan.",
-                harga = "Rp. 1.250.000 (Bulan Pertama)",
-                namaPemilik = "Bu Kirana",
-                noHpPemilik = "085267871235",
+                harga = "Rp. 1.650.000 (Bulan Pertama)",
+                namaPemilik = "Bu Sari",
+                noHpPemilik = "0813285274985",
                 detail1 = "• Ruangan 3.5 x 3 Meter",
                 detail2 = "• AC",
                 detail3 = "• Gantungan Baju",
@@ -120,55 +120,8 @@ class TermurahActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.801329,
-                lng = 110.360446
-
-            )
-        )
-
-        listKost.add(
-            Kost(
-                nama = "Kost Putri Aphrodite",
-                fotoResId = R.drawable.kost5,
-                rating = "⭐ 4.5",
-                jarak = "1478m",
-                desckripsi ="Kamar kost ini mengusung desain minimalis dan modern yang sangat cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi oleh warna netral yang lembut, memberikan kesan yang bersih dan nyaman. Lantai keramik berwarna terang semakin mempertegas kesan luas pada ruangan, menciptakan suasana yang lapang dan nyaman.",
-                harga = "Rp. 1.370.000 (Bulan Pertama)",
-                namaPemilik = "Bu Minarsih",
-                noHpPemilik = "081367892345",
-                detail1 = "• Ruangan 3.5 x 3 Meter",
-                detail2 = "• AC",
-                detail3 = "• Gantungan Baju",
-                detail4 = "• Bantal",
-                detail5 = "• Kasur",
-                detail6 = "• Meja",
-                detail7 = "• Kamar Mandi Dalam",
-                detail8 = "• Cermin",
-                lat = -7.795043,
-                lng = 110.357028
-            )
-        )
-
-        listKost.add(
-            Kost(
-                nama = "Kost Putri Athena",
-                fotoResId = R.drawable.kost4,
-                rating = "⭐ 4.6",
-                jarak = "1178m",
-                desckripsi ="Kamar kost ini mengusung desain minimalis dan modern yang sangat cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi oleh warna netral yang lembut, memberikan kesan yang bersih dan nyaman. Lantai keramik berwarna terang semakin mempertegas kesan luas pada ruangan, menciptakan suasana yang lapang dan nyaman.",
-                harga = "Rp. 1.410.000 (Bulan Pertama)",
-                namaPemilik = "Pak Sutarman",
-                noHpPemilik = "082907654189",
-                detail1 = "• Ruangan 3.5 x 3 Meter",
-                detail2 = "• AC",
-                detail3 = "• Gantungan Baju",
-                detail4 = "• Bantal",
-                detail5 = "• Kasur",
-                detail6 = "• Meja",
-                detail7 = "• Kamar Mandi Dalam",
-                detail8 = "• Cermin",
-                lat = -7.784903,
-                lng = 110.357435
+                lat = -7.795580,
+                lng = 110.369490
             )
         )
 
@@ -197,14 +150,14 @@ class TermurahActivity : AppCompatActivity() {
 
         listKost.add(
             Kost(
-                nama = "Kost Raya",
-                fotoResId = R.drawable.kost1,
-                rating = "⭐ 4.9",
-                jarak = "578m",
-                desckripsi ="Kamar kost ini memiliki desain minimalis dan modern yang cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi warna netral dan lembut, memberikan kesan bersih dan nyaman. Lantai keramik berwarna terang menambah kesan luas pada ruangan.",
-                harga = "Rp. 1.650.000 (Bulan Pertama)",
-                namaPemilik = "Bu Sari",
-                noHpPemilik = "0813285274985",
+                nama = "Kost Putri Athena",
+                fotoResId = R.drawable.kost4,
+                rating = "⭐ 4.6",
+                jarak = "1178m",
+                desckripsi ="Kamar kost ini mengusung desain minimalis dan modern yang sangat cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi oleh warna netral yang lembut, memberikan kesan yang bersih dan nyaman. Lantai keramik berwarna terang semakin mempertegas kesan luas pada ruangan, menciptakan suasana yang lapang dan nyaman.",
+                harga = "Rp. 1.410.000 (Bulan Pertama)",
+                namaPemilik = "Pak Sutarman",
+                noHpPemilik = "082907654189",
                 detail1 = "• Ruangan 3.5 x 3 Meter",
                 detail2 = "• AC",
                 detail3 = "• Gantungan Baju",
@@ -213,8 +166,54 @@ class TermurahActivity : AppCompatActivity() {
                 detail6 = "• Meja",
                 detail7 = "• Kamar Mandi Dalam",
                 detail8 = "• Cermin",
-                lat = -7.795580,
-                lng = 110.369490
+                lat = -7.784903,
+                lng = 110.357435
+            )
+        )
+
+        listKost.add(
+            Kost(
+                nama = "Kost Putri Aphrodite",
+                fotoResId = R.drawable.kost5,
+                rating = "⭐ 4.5",
+                jarak = "1478m",
+                desckripsi ="Kamar kost ini mengusung desain minimalis dan modern yang sangat cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi oleh warna netral yang lembut, memberikan kesan yang bersih dan nyaman. Lantai keramik berwarna terang semakin mempertegas kesan luas pada ruangan, menciptakan suasana yang lapang dan nyaman.",
+                harga = "Rp. 1.370.000 (Bulan Pertama)",
+                namaPemilik = "Bu Minarsih",
+                noHpPemilik = "081367892345",
+                detail1 = "• Ruangan 3.5 x 3 Meter",
+                detail2 = "• AC",
+                detail3 = "• Gantungan Baju",
+                detail4 = "• Bantal",
+                detail5 = "• Kasur",
+                detail6 = "• Meja",
+                detail7 = "• Kamar Mandi Dalam",
+                detail8 = "• Cermin",
+                lat = -7.795043,
+                lng = 110.357028
+            )
+        )
+
+        listKost.add(
+            Kost(
+                nama = "Kost Sirana",
+                fotoResId = R.drawable.kost3,
+                rating = "⭐ 4.7",
+                jarak = "955m",
+                desckripsi ="Kamar kost ini memiliki desain minimalis dan modern yang cocok untuk mahasiswa maupun pekerja kantoran. Interior kamar didominasi warna netral dan lembut, memberikan kesan bersih dan nyaman. Lantai keramik berwarna terang menambah kesan luas pada ruangan.",
+                harga = "Rp. 1.250.000 (Bulan Pertama)",
+                namaPemilik = "Bu Kirana",
+                noHpPemilik = "085267871235",
+                detail1 = "• Ruangan 3.5 x 3 Meter",
+                detail2 = "• AC",
+                detail3 = "• Gantungan Baju",
+                detail4 = "• Bantal",
+                detail5 = "• Kasur",
+                detail6 = "• Meja",
+                detail7 = "• Kamar Mandi Dalam",
+                detail8 = "• Cermin",
+                lat = -7.801329,
+                lng = 110.360446
             )
         )
     }
